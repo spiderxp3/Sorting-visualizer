@@ -1,0 +1,60 @@
+.bar-container {
+  width: 100%;
+  height: 73%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  width: 3.5vw;
+  height: 63vh;
+  margin: 0 2.5%;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-30deg);
+  background-color: #dfdfdf;
+}
+
+.side {
+  width: 3.5vw;
+  height: 63vh;
+  position: absolute;
+  background-color: rgba(106, 106, 106, 0.25);
+  opacity: 95%;
+}
+
+.back {
+  transform: translateZ(-4vw);
+}
+
+.left {
+  transform-origin: left;
+  transform: rotateY(90deg);
+}
+
+.right {
+  transform-origin: right;
+  transform: rotateY(-90deg);
+}
+
+.top {
+  height: 3.5vw;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  background-color: rgba(254, 254, 254, 0.15);
+}
+
+.bottom {
+  height: 3.5vw;
+  transform-origin: top;
+  transform: translateY(70vh) rotateX(-90deg);
+  background-color: rgba(225, 0, 120, 0.5);
+  box-shadow: 5px 5px 50px 5px rgba(225, 0, 120, 0.2);
+  transition: 0.3s;
+}
+
+.color-bar {
+  background-color: rgba(225, 0, 120, 0.5);
+  box-shadow: 5px 5px 50px 5px rgba(225, 0, 120, 0.2);
+  transition: 0.3s;
+}
